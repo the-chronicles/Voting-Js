@@ -12,7 +12,7 @@ function ViewCandidates() {
 
   useEffect(() => {
     async function fetchCandidates() {
-      const response = await fetch("http://localhost:5000/api/candidates");
+      const response = await fetch("https://evotingts.onrender.com/api/candidates");
       const data: Candidate[] = await response.json();
       setCandidates(data);
     }

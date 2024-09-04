@@ -9,7 +9,7 @@ function Register() {
   const navigate = useNavigate();
 
   const handleRegister = async () => {
-    const response = await fetch('http://localhost:5000/api/register', {
+    const response = await fetch('https://evotingts.onrender.com/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

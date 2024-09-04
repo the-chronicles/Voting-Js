@@ -13,7 +13,7 @@ function Result() {
 
   useEffect(() => {
     async function fetchResults() {
-      const response = await fetch("http://localhost:5000/api/results");
+      const response = await fetch("https://evotingts.onrender.com/api/results");
       const data: Result[] = await response.json();
       setResults(data);
     }
